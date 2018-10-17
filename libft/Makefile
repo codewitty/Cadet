@@ -6,7 +6,7 @@
 #    By: jogomes <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/26 13:14:29 by jogomes           #+#    #+#              #
-#    Updated: 2018/10/01 15:11:42 by jogomes          ###   ########.fr        #
+#    Updated: 2018/10/17 16:10:32 by jogomes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CFLAGS = -c -Wall -Werror -Wextra
 
 SRC = *.c
 
-HDR = includes
+HDR = libft.h
 
 .PHONY: all clean fclean re
 
