@@ -6,7 +6,7 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/21 13:19:41 by jogomes           #+#    #+#             */
-/*   Updated: 2018/11/05 11:20:39 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/11/12 13:44:24 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 
+void	ft_putchar(char c);
 int		ft_isdigit(int c);
 int		ft_isupper(int c);
 void	*ft_memset(void *b, int c, size_t len);
@@ -25,4 +26,7 @@ char	*ft_strdup(const char *s1);
 size_t	ft_strlen(const char *s);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void	ft_bzero(void *b, size_t len);
+char	*ft_memcpy(void *restrict dst, const void *restrict src, size_t len);
+void	ft_putnbr(int n);
 #endif

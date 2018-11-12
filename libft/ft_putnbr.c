@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/05 11:58:37 by jogomes           #+#    #+#             */
-/*   Updated: 2018/11/12 13:49:57 by jogomes          ###   ########.fr       */
+/*   Created: 2018/10/22 14:19:24 by jogomes           #+#    #+#             */
+/*   Updated: 2018/11/12 13:52:00 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
-char	*ft_memcpy(void *restrict dst, const void *restrict src, size_t len)
+void	ft_putchar(char c)
 {
-	size_t		i;
-	const char	*src1;
-	char		*dst1;
+	write(1, &c, 1);
+}
 
-	src1 = src;
-	dst1 = dst;
-	i = 0;
-	while (src1[i] && i < len)
+void	ft_putnbr(int nb)
+{
+	if (nb >= 10)
 	{
-		dst1[i] = src1[i];
-		i++;
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
 	}
-	return (dst);
+	else
+		ft_putchar(nb + '0');
 }
