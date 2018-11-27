@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,15 +12,21 @@
 
 #include "libft.h"
 
-char	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*tmp;
 
-	tmp = (char *)malloc(sizeof(char) * len);
-	if (tmp == NULL) // required incase len is invalid and allocation fails
-		return (NULL);
-	ft_memcpy(tmp, src, len);:
-	ft_memcpy(dst, tmp, len);
-	free(tmp);
-	return (dst);
+	char	*str1;
+	char	*str2;
+	size_t	i;
+
+	i = 0;
+	str1 = (char *)s1;
+	str2 = (char *)s2;
+	while (i < n)
+	{
+		if (str1[i] != str2[i])
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		i++;
+	}
+	return (0);
 }	

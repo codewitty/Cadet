@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,15 +12,18 @@
 
 #include "libft.h"
 
-char	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memchr(const void *src, int c, size_t n)
 {
-	char	*tmp;
 
-	tmp = (char *)malloc(sizeof(char) * len);
-	if (tmp == NULL) // required incase len is invalid and allocation fails
-		return (NULL);
-	ft_memcpy(tmp, src, len);:
-	ft_memcpy(dst, tmp, len);
-	free(tmp);
-	return (dst);
+	char	*str;
+	size_t	i;
+	i = 0;
+	str = (char *)s;
+	while (i < n)
+	{
+		if ((unsigned char)str[i] == (unsigned char)c)
+			return ((char *)s + i);
+		i++;
+	}
+	return (NULL);
 }	
