@@ -16,6 +16,7 @@
 
 char	*ft_strlcat(char *s1, const char *s2, size_t i);	
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 void	ft_putchar(char c);
 int		ft_isdigit(int c);
 int		ft_isupper(int c);
