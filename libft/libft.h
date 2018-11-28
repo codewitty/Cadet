@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 
+char	*ft_strlcat(char *s1, const char *s2, size_t i);	
 void	ft_putchar(char c);
 int		ft_isdigit(int c);
 int		ft_isupper(int c);
