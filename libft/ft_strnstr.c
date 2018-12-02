@@ -6,7 +6,7 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 11:58:37 by jogomes           #+#    #+#             */
-/*   Updated: 2018/11/12 14:20:03 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/12/02 13:56:49 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char		*ft_strnstr(const char *s1, const char *s2, size_t n)
 			return ((char *)s1 + i);
 		i++;
 	}
-		return (NULL);
+	return (NULL);
 }

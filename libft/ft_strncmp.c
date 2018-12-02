@@ -6,15 +6,16 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 17:25:42 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/26 13:00:25 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/12/02 14:00:08 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t i;
+
 	i = 0;
 	if (n == 0)
 		return (0);
