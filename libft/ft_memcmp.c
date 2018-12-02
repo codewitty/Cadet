@@ -6,15 +6,14 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 11:58:37 by jogomes           #+#    #+#             */
-/*   Updated: 2018/11/12 14:20:03 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/12/02 13:46:33 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcmp(const void *s1, const void *s2, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-
 	char	*str1;
 	char	*str2;
 	size_t	i;
@@ -29,4 +28,4 @@ void	*ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	}
 	return (0);
-}	
+}
