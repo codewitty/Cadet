@@ -6,7 +6,7 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 11:58:37 by jogomes           #+#    #+#             */
-/*   Updated: 2018/12/02 13:56:49 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/12/07 14:07:39 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,4 @@ void	*ft_memalloc(size_t size)
 		return (NULL);
 	ft_bzero(m, size);
 	return (m);
-}
-
 }
