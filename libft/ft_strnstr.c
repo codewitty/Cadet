@@ -15,15 +15,15 @@
 char		*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
-	size_t	j;
+	size_t	k;
 
 	i = 0;
 	while (i < n && s1[i] != '\0')
 	{
 		j = 0;
-		while (i + j < n && s1[i + j] == s2[j] && s2[j] != '\0')
-			j++;
-		if (s2[j] == '\0')
+		while (i + k < n && s1[i + k] == s2[k] && s2[k] != '\0')
+			k++;
+		if (s2[k] == '\0')
 			return ((char *)s1 + i);
 		i++;
 	}
