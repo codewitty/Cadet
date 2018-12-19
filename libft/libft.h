@@ -45,6 +45,10 @@ int		ft_atoi(const char *str);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
+
+//part 2 functions
+
+
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	* ft_strnew(size_t size);
