@@ -6,7 +6,7 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/21 13:19:41 by jogomes           #+#    #+#             */
-/*   Updated: 2018/12/19 11:55:42 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/12/19 13:02:41 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,8 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 
-//part 2 functions
-
-
+/*part 2 functions
+ * */
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
@@ -63,7 +62,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
-char	** ft_strsplit(char const *s, char c);
+char	**ft_strsplit(char const *s, char c);
 char	*ft_itoa(int n);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
