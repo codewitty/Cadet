@@ -12,21 +12,7 @@
 
 #include "libft.h"
 
-char	*ft_strdel(char		**as)
+void		*ft_strdel(char	**as)
 {
-	size_t		len;
-	size_t		i;
-	char		*ptr;
-
-	len = 0;
-	while (s1[len])
-		len++;
-	ptr = (char *)malloc(sizeof(char) * len + 1);
-	i = 0;
-	while (i <= len)
-	{
-		ptr[i] = s1[i];
-		i++;
-	}
-	return (ptr);
+	ft_memdel((void **)as);
 }
