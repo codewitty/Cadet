@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 13:42:53 by jogomes           #+#    #+#             */
-/*   Updated: 2018/12/19 14:01:20 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/12/19 13:45:46 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strequ(char const *s1, char const *s2)
+int		ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	if (ft_strncmp(s1, s2, n) == 0)
+	if (ft_strcmp(s1, s2) == 0)
 		return (1);
 	else
 		return (0);
