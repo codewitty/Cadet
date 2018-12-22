@@ -14,4 +14,4 @@
 
 char	*ft_strtrim(char const *s)
 {
-
+	unsigned int i;
