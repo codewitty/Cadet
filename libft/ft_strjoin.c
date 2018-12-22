@@ -14,4 +14,18 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+	char *p;
 
+	p = (char *)malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+	p = s1;
+	while (*p)
+		p++;
+	while (*s2)
+	{
+		*p = *s2;
+		p++;
+		s2++;
+	}
+	*p = '\n';
+	return (p);
+}
