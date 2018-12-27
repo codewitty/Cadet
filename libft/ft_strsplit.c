@@ -13,12 +13,3 @@
 #include "libft.h"
 
 char	**ft_strsplit(const char *s, char c)
-{
-	size_t i;
-
-	while (s[i])
-	{
-		f(&s[i]);
-		i++;
-	}
-}
