@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_strsplit(char *s, void (*f) (char *))
+char	**ft_strsplit(const char *s, char c)
 {
 	size_t i;
 
