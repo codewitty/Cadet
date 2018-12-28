@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_itoa(const char *str)
+char	*ft_itoa(int n)
 {
 	long			res;
 	long			sign;
