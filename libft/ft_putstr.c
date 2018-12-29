@@ -13,17 +13,3 @@
 #include "libft.h" 
 
 void	ft_putstr(char const *s)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putnbr(int nb)
-{
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-		ft_putchar(nb + '0');
-}
