@@ -12,6 +12,6 @@
 
 #include "libft.h" 
 
-void	ft_putstr_fd(char c, int fd)
+void	ft_putstr_fd(char const c, int fd)
 {
 	unsigned int i;
