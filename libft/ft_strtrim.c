@@ -14,7 +14,9 @@
 
 char	*ft_strtrim(char const *s)
 {
-	unsigned int i;
+	unsigned int	i;
+	unsigned int	j;
+	unsigned int	k;
+	char		*str;
 
-	while (s
 	
