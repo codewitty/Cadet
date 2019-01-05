@@ -19,4 +19,7 @@ char	*ft_strtrim(char const *s)
 	unsigned int	k;
 	char		*str;
 
-	
+	i = 0;
+	k = 0;
+
+
