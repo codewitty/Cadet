@@ -9,5 +9,6 @@
 /*   Updated: 2018/12/19 13:45:46 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int		ft_strequ(char const *s1, char const *s2)
+t_list	*ft_lstnew(void const *content, size_t content_size)
