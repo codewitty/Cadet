@@ -11,4 +11,4 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-t_list	*ft_lst
+t_list	*ft_lstdelone(t_lst **alst, void (*del)(void *, size_t))
