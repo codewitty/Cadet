@@ -11,6 +11,6 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-void	*ft_lstadd(t_list **alst, void (*del)(void *size_t))
+void	*ft_lstiter(t_list **alst, void (*del)(void *size_t))
 {
 
