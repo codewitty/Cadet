@@ -25,4 +25,4 @@ char	*ft_strtrim(char const *s)
 	i++;
 	if (s[i])
 	{
-		return(ft_strcpy(
+		return(ft_strcpy(ft_memalloc
