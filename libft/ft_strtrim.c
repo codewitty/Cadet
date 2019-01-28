@@ -25,4 +25,4 @@ char	*ft_strtrim(char const *s)
 	i++;
 	if (s[i])
 	{
-		return
+		return(ft_strcpy(
