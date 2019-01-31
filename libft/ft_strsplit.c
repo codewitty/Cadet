@@ -44,13 +44,6 @@ static char			*ft_strndup(const char *s, size_t n)
 }
 char				**ft_strsplit(char const *s, char c)
 {
-	/*We start by creating three counter variables. We will use these three
-	 * variables to pinpoint index positions inside our parameter string s. We
-	 * also create a char variable **tab. This variable is for our table that
-	 * will hold our split strings. We set the variables i and k to 0 and well
-	 * then allocate memory for our table. This is where we use our ft_cntwrd
-	 * function above, to figure out how much space we need to allocate for our
-	 * table. If the allocation fails we return a NULL.*/
 	int				i;
 	int				j;
 	int				k;
