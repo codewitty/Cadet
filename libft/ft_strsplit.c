@@ -31,8 +31,6 @@ static int			ft_cntwrd(char const *s, char c)
 	}
 	return (cntr);
 }
- * parameter) characters from the given string, always NULL terminating the
- * copied string.*/
 static char			*ft_strndup(const char *s, size_t n)
 {
 	/*We start by creating a string variable that we will be allocating memory
