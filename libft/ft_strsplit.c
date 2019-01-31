@@ -42,8 +42,6 @@ static char			*ft_strndup(const char *s, size_t n)
 	str[n] = '\0';
 	return (str);
 }
-/*With the two previous functions made we are now ready to begin our real
- * function, ft_strsplit*/
 char				**ft_strsplit(char const *s, char c)
 {
 	/*We start by creating three counter variables. We will use these three
