@@ -33,21 +33,6 @@ static int			ft_cntwrd(char const *s, char c)
 }
 static char			*ft_strndup(const char *s, size_t n)
 {
-	/*We start by creating a string variable that we will be allocating memory
-	 * to and that we will be returning as the result of this function. We 
-	 * allocate the memory for this string by using this function's parameter
-	 * of n. We get this parameter from our ft_strsplit function. It is the 
-	 * length of one of the words that we a splitting into a table. We add 1 to
-	 * this in the malloc function to ensure space for a terminating '\0'. We
-	 * then check to see if the memory allocation failed. If it did we will
-	 * return NULL. If the allocation succeeded then we want to place our word
-	 * into our fresh string str. We do this by using our previously made 
-	 * ft_strncpy function. We give ft_strncpy our memory allocated 'fresh'
-	 * string, the parameter string s (which is taken from ft_strsplit but has
-	 * been put in the ft_strndup function at the index the word we want to 
-	 * place into str will start from) and the size_t parameter n. We then make
-	 * sure to add a terminating character to the end of our fresh string and
-	 * then return it. */
 	char			*str;
 
 	str = (char *)malloc(sizeof(char) * n + 1);
