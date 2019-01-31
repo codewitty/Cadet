@@ -22,13 +22,7 @@ char		*ft_itoa(int n)
 		return (NULL);
 	if (n == -2147483648)
 		return (ft_strcpy(str, "-2147483648"));
-	/*Next we want to see if the int that is passed in our parameter is a
-	 * negative number. If int n is less than zero then we make our 'fresh'
-	 * string str's index position 0 a negative sign and postion 1 a
-	 * terminating '\0'. We then set string str equal to ft_strjoin with our
-	 * str as a parameter and we recursively call our function with a -n so as
-	 * to turn the negative int into a postive. We then start the function over
-	 * again.*/
+	
 	if (n < 0)
 	{
 		str[0] = '-';
