@@ -31,10 +31,6 @@ static int			ft_cntwrd(char const *s, char c)
 	}
 	return (cntr);
 }
-/*This next function is a variation of the ft_strdup function we have
- * previously made. According to the man the ft_strdup function allocates
- * sufficient memory for a copy of the given string, does the copy, and returns
- * a pointer to it. The ft_strndup function copies at most n (our size_t
  * parameter) characters from the given string, always NULL terminating the
  * copied string.*/
 static char			*ft_strndup(const char *s, size_t n)
