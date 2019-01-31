@@ -54,25 +54,7 @@ char				**ft_strsplit(char const *s, char c)
 	tab = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
 	if (tab == NULL)
 		return (NULL);
-	/*We now go into our loop to split our given string. Our main loop will
-	 * continue so long as we have not reached the end of our parameter string.
-	 * Inside we have another loop to pass over all of the parameter c
-	 * characters that exist. This will stop when we reach our first not c 
-	 * character. We then set our variable j equal to the value of i at This
-	 * point in our function. j will be used to point to the starting index
-	 * position of our first word inside our string s. We then continue moving
-	 * through string s so long as we don't come across our parameter c
-	 * character. Once we do we move to our if statement. If i is greater than
-	 * j, which it should be if there is a word we want, we will then place
-	 * that word into our table index position 0 (which is currently the value
-	 * of k). We do this using the ft_strndup function from above and we give it
-	 * two parameters; Our paramter string s (but at the index position of j,
-	 * the beginning of the word we want) and the size/length of the word which
-	 * we find by subtracting the value of j from the value of i (the start and
-	 * end index positions of our word). We then increment k to move to the
-	 * next position in our table. We repeat the main while loop until we reach
-	 * the end of our parameter string s. We finish by adding a terminating
-	 * NULL to our table tab. We then return our finished table.*/
+	
 	while (s[i])
 	{
 		while (s[i] == c)
