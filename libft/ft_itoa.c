@@ -16,17 +16,6 @@ char	*ft_itoa(int n)
 {
 char		*ft_itoa(int n)
 {
-	/*We start by creating a char string variable. This is what our function
-	 * will return. We then allocate memory for our string variable str. NOTE:
-	 * We only allocate memory for a size of 2 char values. This is because
-	 * we will be doing this function recusively and we want to allocate memory
-	 * only as we need it. We do a size of 2 in our malloc function because we
-	 * want to do one character at a time from the given int n, one space for
-	 * the one digit number converted to a char and the terminating '\0' that
-	 * is needed to finish that individual char's string. If the allocation
-	 * fails we return NULL. We also want to compensate for the chance the int
-	 * passed to us is the smallest integer possible. If we are passed that
-	 * number into our parameter we make sure we return a string of it.*/
 	char	*str;
 
 	if (!(str = (char *)malloc(sizeof(char) * 2)))
