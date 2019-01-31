@@ -70,6 +70,4 @@ char				**ft_strsplit(char const *s, char c)
 	}
 	tab[k] = NULL;
 	return (tab);
-char	**ft_strsplit(const char *s, char c)
-{
-	unsigned int i;
+}
