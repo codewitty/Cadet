@@ -26,3 +26,11 @@ char	*ft_strtrim(char const *s)
 	if (s[i])
 	{
 		return(ft_strcpy(ft_memalloc(sizeof(char) * 2),""));
+	}
+
+	i = 0;
+	k = 0;
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+		i++;
+	if (s[i] == '\0')
+
