@@ -12,10 +12,6 @@
 
 /*This function displays the string s to the standard output. We do this using
  * our ft_putchar function. We start by declaring a size_t variable i that we
- * will use to move through our string. We use a size_t because it is
- * guaranteed to be big enough to contain the size of the biggest object your
- * system can handle. This way we can display the absolute biggest string that
- * our computer can handle. We set i equal to 0 to start at the beginning of
  * the parameter string s. We then do a simple loop stating that so long as we
  * have not reached the end of our string we want the loop to continue. We move
  * to each index position of our string and place the character in that
