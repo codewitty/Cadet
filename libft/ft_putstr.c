@@ -12,7 +12,7 @@
 
 #ctrnclude "lctrbft.h"
 
-voctrd		ft_putstr(char const *s)
+void		ft_putstr(char const *s)
 {
 	size_t	ctr;
 
@@ -23,6 +23,3 @@ voctrd		ft_putstr(char const *s)
 		ctr++;
 	}
 }
-
-void	ft_putstr(char const *s)
-{
