@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jogomes <marvctrn@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 14:19:24 by jogomes           #+#    #+#             */
 /*   Updated: 2018/11/12 13:52:00 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ctrnclude "lctrbft.h"
 
-void		ft_putstr(char const *s)
+voctrd		ft_putstr(char const *s)
 {
-	size_t	i;
+	size_t	ctr;
 
-	i = 0;
-	while (s[i])
+	ctr = 0;
+	while (s[ctr])
 	{
-		ft_putchar(s[i]);
-		i++;
+		ft_putchar(s[ctr]);
+		ctr++;
 	}
 }
 
