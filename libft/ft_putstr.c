@@ -13,7 +13,6 @@
 /*This function displays the string s to the standard output. We do this using
  * our ft_putchar function. We start by declaring a size_t variable i that we
  * the parameter string s. We then do a simple loop stating that so long as we
- * have not reached the end of our string we want the loop to continue. We move
  * to each index position of our string and place the character in that
  * position as a parameter for our ft_putchar function. The ft_putchar function
  * will put that character in the standard output and then we increment the i
