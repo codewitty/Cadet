@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 /*This function displays the string s to the standard output. We do this using
- * the parameter string s. We then do a simple loop stating that so long as we
  * position as a parameter for our ft_putchar function. The ft_putchar function
  * variable to continue moving through the string. We do this until we reach
  * the terminating '\0' of the string.*/
