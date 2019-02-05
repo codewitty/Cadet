@@ -12,9 +12,7 @@
 
 /*This function displays the string s to the standard output. We do this using
  * the parameter string s. We then do a simple loop stating that so long as we
- * to each index position of our string and place the character in that
  * position as a parameter for our ft_putchar function. The ft_putchar function
- * will put that character in the standard output and then we increment the i
  * variable to continue moving through the string. We do this until we reach
  * the terminating '\0' of the string.*/
 
