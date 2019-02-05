@@ -10,11 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*This function displays the string s to the standard output. We do this using
- * position as a parameter for our ft_putchar function. The ft_putchar function
- * variable to continue moving through the string. We do this until we reach
- * the terminating '\0' of the string.*/
-
 #include "libft.h"
 
 void		ft_putstr(char const *s)
