@@ -5,4 +5,4 @@ Starting with Libft- a project to mimic the functionality of C library functions
 
 The 42 norm is  used as a reference for syntax and the use of for loops, do-while and ternary statements are discouraged.
 
-This project gives me an insight into how 
+This project gives me an insight into how C library functions
