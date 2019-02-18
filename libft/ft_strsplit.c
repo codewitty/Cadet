@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int			ft_cntwrd(char const *s, char c)
+static int			ft_wordcount(char const *s, char c)
 {
 	unsigned int	i;
 	int				cntr;
@@ -51,7 +51,7 @@ char				**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	k = 0;
-	piece = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
+	piece = (char **)malloc(sizeof(char *) * (ft_wordcount(s, c)) + 1);
 	if (piece == NULL)
 		return (NULL);
 	
