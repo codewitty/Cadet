@@ -47,12 +47,12 @@ char				**ft_strsplit(char const *s, char c)
 	int				i;
 	int				j;
 	int				k;
-	char			**tab;
+	char				**piece;
 
 	i = 0;
 	k = 0;
-	tab = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
-	if (tab == NULL)
+	piece = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
+	if (piece == NULL)
 		return (NULL);
 	
 	while (s[i])
@@ -64,10 +64,10 @@ char				**ft_strsplit(char const *s, char c)
 			i++;
 		if (i > j)
 		{
-			tab[k] = ft_strndup(s + j, i - j);
+			piece[k] = ft_strndup(s + j, i - j);
 			k++;
 		}
 	}
-	tab[k] = NULL;
-	return (tab);
+	piece[k] = NULL;
+	return (piece);
 }
