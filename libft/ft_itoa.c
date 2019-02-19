@@ -23,8 +23,6 @@ char		*ft_itoa(int n)
 	
 		str[0] = '-';
 		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
-	else if (n < 10 && n >= 0)
-	{
 		str[0] = n + '0';
 		str[1] = '\0';
 	}
