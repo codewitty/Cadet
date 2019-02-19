@@ -21,8 +21,6 @@ char		*ft_itoa(int n)
 
 		return (ft_strcpy(str, "-2147483648"));
 	
-	if (n < 0)
-	{
 		str[0] = '-';
 	}
 		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
