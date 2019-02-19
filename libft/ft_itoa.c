@@ -21,7 +21,6 @@ char		*ft_itoa(int n)
 
 	if (!(str = (char *)malloc(sizeof(char) * 2)))
 		return (NULL);
-	if (n == -2147483648)
 		return (ft_strcpy(str, "-2147483648"));
 	
 	if (n < 0)
