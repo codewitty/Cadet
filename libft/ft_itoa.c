@@ -19,13 +19,5 @@ char		*ft_itoa(int n)
 {
 	char	*str;
 
-		return (ft_strcpy(str, "-2147483648"));
-	
-		str[0] = '-';
-		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
-		str[0] = n + '0';
-		str[1] = '\0';
-	}
-	return (str);
 }
 
