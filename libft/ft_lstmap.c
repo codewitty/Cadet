@@ -12,4 +12,3 @@
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, t_list * (*)(t_list *elem));
-void const *content, size_t content_size)
