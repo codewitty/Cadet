@@ -14,40 +14,24 @@
 
 char		*ft_itoa(int n)
 {
-	char	*ptr;
-	int		ctr;
-	int		neg;
-	int		size;
-	int		index;
+	char *str;
 
-	ctr = 0;
-	neg = 0;
-	ptr = NULL;
-	if (n == 0 || n == -2147483648)
-	{
-		ptr = ft_size_eval(n, ptr);
-		return (ptr);
-	}
+	if (!(str = (char *)malloc(sizeof(char) * 2)))
+		return (NULL);
+	if (n == -2147483648)
+		return (ft_strcpy(str, "-2147483648"));
 	if (n < 0)
 	{
-		neg = 1;
-		n = (n * -1);
-		ctr++;
+		str[0] = '-';
+		str[1] = '\0';
+		str = ft_strjoin(str, ft_itoa(-n));
 	}
-	size = ft_strlen(n);
-	index = 0;
-	ptr = (char*)malloc((ctr + (size(n) + 1)) * sizeof(char));
-	if (!ptr)
-		return (NULL);
-	if (nbr < 0 && (str[index] = '-'))
-		size++;
-	index = size - 1;
-	while (nb >= 10)
+	else if (n >= 10)
+		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
+	else if (n < 10 && n >= 0)
 	{
-		ptr[index--] = (char)(nb % 10 + 48);
-		nb /= 10;
+		str[0] = n + '0';
+		str[1] = '\0';
 	}
-	ptr[index] = (char)(nb % 10 + 48);
-	ptr[size] = '\0';
-	return (ptr);
+	return (str);
 }

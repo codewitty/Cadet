@@ -15,25 +15,18 @@
 char	*ft_strtrim(char const *s)
 {
 	unsigned int	i;
-	unsigned int	j;
 	unsigned int	k;
-	char		*str;
 
 	i = 0;
-	k = 0;
-	while (s == ' ' || s == '\n' || s == '\t')
-	i++;
-	if (s[i])
-	{
-		return(ft_strcpy(ft_memalloc(sizeof(char) * 2),""));
-	}
-
-	i = 0;
-	k = 0;
+	k = ft_strlen(s);
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
 	if (s[i] == '\0')
-		return (ft_strcpy(ft_memalloc(sizeof(char) * 2), ""));
+		return (ft_strdup(""));
+	while (s[k] == ' ' || s[k] == '\n' || s[k] == '\t')
+		k--;
+	if (ft_strsub(s, i, k - i))
+			return (ft_strsub(s, i, k - i));
+		return (0);
 
-
-
+}
