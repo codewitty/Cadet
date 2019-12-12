@@ -10,13 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	char		*p;
 	unsigned int	i;
 
 	i = 0;
-	p = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!s || !f)
+		return (NULL);
+	p = ft_strnew(ft_strlen(s));
 	if (p == NULL)
 		return (NULL);
 	while (s[i])
