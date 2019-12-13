@@ -14,6 +14,13 @@
 # define LIBFT_H
 # include <stdlib.h>
 
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list		*next;
+}					t_list;
+
 void	ft_putchar(char c);
 int		ft_isdigit(int c);
 int		ft_isupper(int c);
