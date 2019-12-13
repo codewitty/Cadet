@@ -13,4 +13,11 @@
 
 void	*ft_lstiter(t_list *lst, void (*del)(void *size_t))
 {
-
+	if (!lst || !f)
+		return ;
+	while (lst != NULL)
+	{
+		f(lst);
+		lst = lst->next;
+	}
+}
