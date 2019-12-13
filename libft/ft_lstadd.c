@@ -9,8 +9,11 @@
 /*   Updated: 2018/12/19 13:45:46 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-void	*ft_lstadd(t_list **alst, void (*del)(void *size_t))
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-
+	new->next = (*alst);
+	(*alst) = new;
+}

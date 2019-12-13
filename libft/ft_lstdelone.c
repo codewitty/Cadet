@@ -9,6 +9,11 @@
 /*   Updated: 2018/12/19 13:45:46 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-t_list	*ft_lstdelone(t_lst **alst, void (*del)(void *, size_t))
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
+{
+	del((*alst)->content, (*alst)->content_size);
+	ft_memdel((void **)alst);
+}
