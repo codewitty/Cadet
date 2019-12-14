@@ -12,7 +12,10 @@
 
 #include "libft.h" 
 
-void	ft_putchar(char c)
+void	ft_putendl(char const *s)
 {
-	write(1, &c, 1);
+	if (!s)
+		return ;
+	ft_putstr(s);
+	ft_putchar('\n');
 }
