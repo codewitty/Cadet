@@ -14,20 +14,16 @@
 
 char		*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
-	size_t	k;
-	size_t	j;
+	size_t	var;
 
-	i = 0;
-	k = 0;
-	while (i < n && s1[i] != '\0')
+	if (!(*s2))
+		return ((char *)s1);
+	var = ft_strn(s2);
+	while (*s1 && var <= n--)
 	{
-		j = 0;
-		while (i + k < n && s1[i + k] == s2[k] && s2[k] != '\0')
-			k++;
-		if (s2[k] == '\0')
-			return ((char *)s1 + i);
-		i++;
+		if (*s1 == *s2 && ft_memcmp(s1, s2, var) == 0)
+			return ((char *)s1);
+		s1++;
 	}
-	return (NULL);
+	return ((void *)0);
 }
