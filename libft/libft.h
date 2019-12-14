@@ -33,6 +33,7 @@ char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlen(const char *s);
+int	ft_isspace(char c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 void	ft_bzero(void *b, size_t len);
