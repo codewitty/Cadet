@@ -18,7 +18,7 @@ char		*ft_strnstr(const char *s1, const char *s2, size_t n)
 
 	if (!(*s2))
 		return ((char *)s1);
-	var = ft_strn(s2);
+	var = ft_strlen(s2);
 	while (*s1 && var <= n--)
 	{
 		if (*s1 == *s2 && ft_memcmp(s1, s2, var) == 0)
